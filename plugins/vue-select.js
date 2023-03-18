@@ -1,0 +1,16 @@
+import Vue from 'vue';
+import vSelect from 'vue-select';
+
+vSelect.props.components.default = () => ({
+  Deselect: {
+    render: createElement => createElement('span', '')
+  },
+  OpenIndicator: {
+    render: createElement => createElement('span', '')
+  },
+  props: {
+    label: 'value'
+  }
+});
+
+Vue.component('vue-select', vSelect);

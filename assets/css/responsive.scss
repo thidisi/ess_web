@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@media (max-width: 1200px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  header {
+    background-image: url("~/assets/images/header-bg-mb.svg");
+    height: 258px;
+  }
+
+  main {
+    margin-top: 258px;
+    margin-left: 0;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    left: 0;
+    transform: unset;
+    padding: 25px;
+    height: 100%;
+
+    .header-right .logo {
+      width: 350px;
+    }
+
+    .header-left {
+      display: none;
+    }
+
+    .humbugger {
+      display: block;
+    }
+  }
+
+  .sidebar-wrapper {
+    top: 258px;
+
+    .sidebar {
+      height: calc(100% - 258px);
+    }
+
+    .sidebar-action {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .login-box {
+    height: 79%;
+    padding: 90px 50px 100px;
+
+    .login-logo {
+      width: 90%;
+      max-width: 515px;
+    }
+
+    .form-header {
+      font-size: 2.8rem;
+      letter-spacing: 2.8px;
+      line-height: 35px;
+      margin-bottom: 54px;
+    }
+
+    .login-form {
+      .form-group {
+        label {
+          font-size: 3.4rem;
+          letter-spacing: 1.7px;
+          line-height: 49px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+          height: 77px;
+          font-size: 3rem;
+        }
+
+        button,
+        input[type="submit"] {
+          width: 410px;
+          height: 84px;
+          font-size: 3.6rem;
+          letter-spacing: 3.6px;
+          line-height: 52px;
+          margin: 65px 0 85px;
+        }
+
+        .custom-control {
+          margin-bottom: 37px;
+        }
+
+        .custom-checkbox {
+          input {
+            width: 37px;
+            height: 37px;
+          }
+
+          label {
+            font-size: 2.9rem;
+            letter-spacing: 0px;
+            line-height: 42px;
+          }
+        }
+
+        a {
+          font-size: 29px;
+          letter-spacing: 0px;
+          line-height: 42px;
+        }
+      }
+    }
+  }
+
+  .sidebar-wrapper {
+    width: 100%;
+
+    .sidebar {
+      a {
+        font-size: 3.4rem;
+        letter-spacing: 3.4px;
+        line-height: 49px;
+        padding: 34px 50px;
+
+        .sidebar-icon {
+          width: 52px;
+          height: 52px;
+          margin-right: 23px;
+        }
+
+        .dropdown-icon {
+          width: 28px;
+          height: 24px;
+          right: 50px;
+        }
+      }
+    }
+  }
+}
